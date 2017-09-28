@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Vollkorn">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Caslon">
+  
 
     <style>
         a{
             outline:none;
         }
+        
         body{
+            font-color:#d7d7d7;
+            font-family: Big Caslon,Book Antiqua,Palatino Linotype,Georgia,serif;
+            font-size:20px;
+        
             margin:0px;
             padding:0px;
             background-color:white;
@@ -28,7 +35,7 @@
             height:auto;
             background-color:white;
             float: left;
-            margin:0px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
         .meTitle{
             overflow: auto;
@@ -59,12 +66,14 @@
         }
 
         .menuItemContainer{
+            text-decoration: none;
             overflow: auto;
             width:65%;
             margin-left:auto;
             margin-right:auto;
         }
         .menuItem{
+            text-decoration: none;
             overflow: auto;
             padding-top:10%;
             padding-bottom:10%;
@@ -84,7 +93,8 @@
 
         }
         .menuItem:active{
-
+            
+            text-decoration: none;
             background-color:white;
 
         }
@@ -98,7 +108,10 @@
 
 
 
-            background-color:#e5e6e8;
+            background-color:#d7d7d7;
+            background-color:black;
+            
+            background-image:url("./background.png");
             min-height:100%;
             min-width:75%;
         }
@@ -106,24 +119,29 @@
             overflow: auto;
             margin-left:7%;
             padding:0%;
-            font-size:64px;
+            font-size:74px;
+            color:Gray;
+            
         }
         .articleArea{
             overflow: auto;
             margin:7%;
             background-color:white;
             min-height:100px;
+            
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
         }
 
         .article{
             overflow: auto;
             margin:7%;
-
             border-top:thin black solid;
+
         }
         .articleTitle{
             overflow: auto;
+            font-size:40px;
         }
         .articleDate{
             overflow: auto;
@@ -135,8 +153,21 @@
 
         .articlePic{
             overflow: auto;
-
+            margin-left:auto;
+            margin-right:auto;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             width: 100%;
+        }
+        
+        .readmore{
+            background-color:orange;
+            box-shadow: 0 4px 8px rgba(1, 1, 0, 0.2);
+            text-decoration:none;
+            color:black;
+        }
+        .readmore:hover{
+            text-decoration:underline;
+            color:black;
         }
 
 
@@ -155,20 +186,22 @@
     <img src="me.jpg" class="blogger">
     <div class="menuItemContainer">
 
-        <a href="https://www.google.com">
+        <a href="https://www.google.com" style="text-decoration: none;">
             <p class = "menuItem">
                 Blog
             </p>
         </a>
-        <a href="https://www.google.com">
+        <a href="https://www.google.com" style="text-decoration: none;">
             <p class = "menuItem">
                 About Me
             </p>
-        </a><a href="https://www.google.com">
+        
+        <a href="https://www.google.com" style="text-decoration: none;">
             <p class = "menuItem">
                 Projects
             </p>
-        </a><a href="https://www.google.com">
+        
+        <a href="https://www.google.com" style="text-decoration: none;">
             <p class = "menuItem">
                 Resume
             </p>
@@ -185,6 +218,37 @@
     <div class="articleArea">
 
         <h1 class="blogHeadText"> Blog</h1>
+
+        <div class="article">
+            <h1 class="articleTitle" style="">Prey, A Review. </h1>
+            <p class="articleDate">Posted: xx-xx-xxxx</p>
+            <img src="prey.jpg" class="articlePic">
+            <p class = "articleText">
+                Prey is a first-person shooter video game developed by Arkane Studios and published by Bethesda Softworks.
+                The game was released worldwide on 5 May 2017, for Microsoft Windows, PlayStation 4 and Xbox One.
+
+                In Prey, the player controls Morgan Yu while exploring the space station Talos I, in orbit around Earth–Moon L2,
+                where research into a hostile alien collective called the Typhon is performed. As the Typhon escape confinement,
+                the player uses a variety of weapons and abilities derived from the Typhon to avoid being killed by the aliens while
+                looking to escape the station. The player gains access to areas of the station through a Metroidvania style of
+                progression by acquiring key items and abilities, eventually allowing the player to fully explore the station
+                in an open world setting.
+
+                Arkane's Prey is largely unrelated to the 2006 game Prey developed by Human Head Studios, and is considered
+                a reimagining of the intellectual property set in a wholly new narrative. While Prey 2, a sequel to the 2006 game,
+                had been planned by Human Head, it fell into development hell following transfer of the intellectual property from
+                3D Realms to Bethesda Softworks, and was eventually cancelled in 2014. Arkane's game does not use any of the planned
+                sequel's assets, and only incorporates the previous game's name and the broad theme of the protagonist being hunted
+                by aliens. Arkane built Prey as a spiritual sequel to System Shock, providing the player with several potential means
+                of progressing within the game.
+                <span><a href="https://www.google.com" class="readmore">...Read More</a></span>
+            </p>
+        </div>
+        
+    <!--
+    </div>
+     <div class="articleArea">
+    -->
 
 
         <div class="article" style="margin-top:0px;">
@@ -213,33 +277,6 @@
         </div>
 
 
-
-
-        <div class="article">
-            <h1 class="articleTitle">Prey, A Review. </h1>
-            <p class="articleDate">Posted: xx-xx-xxxx</p>
-            <img src="prey.jpg" class="articlePic">
-            <p class = "articleText">
-                Prey is a first-person shooter video game developed by Arkane Studios and published by Bethesda Softworks.
-                The game was released worldwide on 5 May 2017, for Microsoft Windows, PlayStation 4 and Xbox One.
-
-                In Prey, the player controls Morgan Yu while exploring the space station Talos I, in orbit around Earth–Moon L2,
-                where research into a hostile alien collective called the Typhon is performed. As the Typhon escape confinement,
-                the player uses a variety of weapons and abilities derived from the Typhon to avoid being killed by the aliens while
-                looking to escape the station. The player gains access to areas of the station through a Metroidvania style of
-                progression by acquiring key items and abilities, eventually allowing the player to fully explore the station
-                in an open world setting.
-
-                Arkane's Prey is largely unrelated to the 2006 game Prey developed by Human Head Studios, and is considered
-                a reimagining of the intellectual property set in a wholly new narrative. While Prey 2, a sequel to the 2006 game,
-                had been planned by Human Head, it fell into development hell following transfer of the intellectual property from
-                3D Realms to Bethesda Softworks, and was eventually cancelled in 2014. Arkane's game does not use any of the planned
-                sequel's assets, and only incorporates the previous game's name and the broad theme of the protagonist being hunted
-                by aliens. Arkane built Prey as a spiritual sequel to System Shock, providing the player with several potential means
-                of progressing within the game.
-                <span><a href="https://www.google.com">...Read More</a></span>
-            </p>
-        </div>
 
 
 
